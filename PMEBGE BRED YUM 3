@@ -1,0 +1,3 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(299.529144, -1.69438338, -1544.53552, 0.999166906, 0, 0.0408110172, 0, 1, 0, -0.0408110172, 0, 0.999166906)
+end)
