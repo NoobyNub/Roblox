@@ -25,5 +25,6 @@ end)
 coroutine.resume(Thread4)
 
 game:GetService("RunService").RenderStepped:Connect(function()
+if _G.all == true then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end)
