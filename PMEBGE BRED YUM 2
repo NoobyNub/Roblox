@@ -1,0 +1,5 @@
+while wait(0.9) do
+_G.farm = true
+wait(0.1)
+_G.farm = false
+end
