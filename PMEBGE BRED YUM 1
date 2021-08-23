@@ -1,0 +1,9 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+if _G.farm == true then
+for i,v in pairs(game.Workspace.Map.PirateCove.DoughStation:GetDescendants()) do
+if v.Name == "Part" then
+fireproximityprompt(v.Dough)
+end
+end
+end
+end)
