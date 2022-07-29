@@ -8,7 +8,7 @@ firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent,
 end
 end
 for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
-if v.Name == "Lantern Spirit" then
+if v.Name == "Icy Axolotl" then
 v.System.Upgraded.Event:FireServer()
 for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
 if v.Name == "IceSpirit" then
