@@ -1,0 +1,19 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+for i,v in pairs(game.Workspace.Debris:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1)
+end
+end
+end)
+
+while wait(40) do
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "Sting" then
+v.System.Upgraded.Event:FireServer()
+elseif v.Name == "IceSpirit" then
+v.System.Upgraded.Event:FireServer()
+end
+end
+end
