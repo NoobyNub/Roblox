@@ -1,0 +1,4 @@
+while wait(20) do
+game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-14.9, 0.6, 8.7),"Sting")
+game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-14.9, 0.6, 8.7),"Ice Spirit")
+end
