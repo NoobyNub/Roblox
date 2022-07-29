@@ -3,7 +3,7 @@ pcall(function()
 for i,v in pairs(game.Workspace.Debris:GetDescendants()) do
 if v:IsA("TouchTransmitter") then
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
-wait()
+task.wait()
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1)
 end
 end
