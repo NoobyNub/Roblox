@@ -1,0 +1,26 @@
+while wait(4) do
+for i,v in pairs(game.Workspace.Debris:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1)
+end
+end
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "Lantern Spirit" then
+v.System.Upgraded.Event:FireServer()
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "IceSpirit" then
+v.System.Upgraded.Event:FireServer()
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" then
+if v.Model.Center.CFrame ~= CFrame.new(-15, 0.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1) or v.Model.Center.CFrame ~= CFrame.new(-14.9866447, 0.420026779, -0.0114431381, 0, 0, 1, 0, 1, -0, -1, 0, 0) or v.Model.Center.CFrame ~= CFrame.new(-14.9866447, 2, -0.0114431381, 1, 0, 0, 0, 1, 0, 0, 0, 1) or v.Model.Center.CFrame ~= CFrame.new(-15.0164795, 1.95976639, -0.0604801178, 0, 0, 1, 0, 1, -0, -1, 0, 0) or v.Model.Center.CFrame ~= CFrame.new(-15.0093174, 2.0563736, -0.0604801178, -1, 0, 0, 0, 1, 0, 0, 0, -1) then
+v.System.Upgraded.Event:FireServer()
+end
+end
+end
+end
+end
+end
+end
+end
