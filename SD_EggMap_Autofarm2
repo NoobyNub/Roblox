@@ -1,4 +1,5 @@
-while wait(4) do
+while task.wait(4) do
+pcall(function()
 for i,v in pairs(game.Workspace.Debris:GetDescendants()) do
 if v:IsA("TouchTransmitter") then
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
@@ -23,4 +24,5 @@ end
 end
 end
 end
+end)
 end
