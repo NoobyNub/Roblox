@@ -1,4 +1,5 @@
-while wait() do
+while task.wait() do
+pcall(function()
 game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-15, 1, 0),"Fire Spirit")
 wait(3)
 for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
@@ -31,4 +32,5 @@ end
 end
 end
 end
+end)
 end
