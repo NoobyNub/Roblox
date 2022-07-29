@@ -2,7 +2,7 @@ while task.wait() do
 pcall(function()
 game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-7.5, 1, 8),"Fire Spirit")
 game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-7.5, 1, 8),"Ice Spirit")
-game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-7.5, 1, 8),"Lantern Spirit")
+game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-7.5, 1, 8),"Icy Axolotl")
 task.wait(20)
 end)
 end
