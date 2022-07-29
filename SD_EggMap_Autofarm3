@@ -1,0 +1,34 @@
+while wait() do
+game:GetService("ReplicatedStorage").RemoteEvent.PlaceTower:FireServer(Vector3.new(-15, 1, 0),"Fire Spirit")
+wait(3)
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" and v.Model.Center.CFrame == CFrame.new(-15, 0.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1) then
+v.System.Upgraded.Event:FireServer()
+wait(0.25)
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" and v.Model.Center.CFrame == CFrame.new(-14.9866447, 0.420026779, -0.0114431381, 0, 0, 1, 0, 1, -0, -1, 0, 0) then
+v.System.Upgraded.Event:FireServer()
+wait(0.25)
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" and v.Model.Center.CFrame == CFrame.new(-14.9866447, 2, -0.0114431381, 1, 0, 0, 0, 1, 0, 0, 0, 1) then
+v.System.Upgraded.Event:FireServer()
+wait(0.25)
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" and v.Model.Center.CFrame == CFrame.new(-15.0164795, 1.95976639, -0.0604801178, 0, 0, 1, 0, 1, -0, -1, 0, 0) then
+v.System.Upgraded.Event:FireServer()
+wait(0.25)
+for i,v in pairs(game.Workspace.Towers:GetDescendants()) do
+if v.Name == "FireSpirit" and v.Model.Center.CFrame == CFrame.new(-15.0093174, 2.0563736, -0.0604801178, -1, 0, 0, 0, 1, 0, 0, 0, -1) then
+v.System.Upgraded.Event:FireServer()
+game:GetService("ReplicatedStorage").RemoteEvent.ReturnSpirit:FireServer(v)
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
